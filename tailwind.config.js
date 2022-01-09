@@ -242,7 +242,7 @@ module.exports = {
         },
         fontFamily: {
             sans: [
-                "ui-sans-serif",
+                "Khula",
                 "system-ui",
                 "-apple-system",
                 "BlinkMacSystemFont",

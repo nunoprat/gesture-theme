@@ -1,7 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Noto+Serif:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: "Khula", sans-serif;
+}
+.page-wrapper {
+    min-height: 100vh;
+}
+
 .title {
     @apply text-3xl font-semibold text-blue-500;
+}
+
+.bg-1 {
+    background-image: url(../pic1.jpg);
+    background-position: center;
+    background-size: cover;
 }

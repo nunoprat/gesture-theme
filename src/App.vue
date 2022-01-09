@@ -1,21 +1,17 @@
 <template>
-  <div class="container bg-gray-100 px-32 py-32">
-    <HeroSection title="Hello World!"></HeroSection>
-    <div class="grid grid-cols-2 gap-9">
-      <MiniCard v-for="(item, i) in 6" :key="i" />
+    <Header />
+    <div class="page-wrapper">
+        <router-view />
     </div>
-  </div>
+    <Footer />
 </template>
-
 <script>
-import HeroSection from "./components/HeroSection.vue";
-import MiniCard from "./components/MiniCard.vue";
-
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 export default {
-  name: "App",
-  components: {
-    HeroSection,
-    MiniCard,
-  },
+    components: {
+        Header,
+        Footer,
+    },
 };
 </script>

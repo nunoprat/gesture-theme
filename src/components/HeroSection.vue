@@ -1,15 +1,7 @@
 <template>
-    <div>
-        <p>{{ title }}</p>
-
-        <ul>
-            <li>Tailwind Flexbox</li>
-            <li>Html best practices - section, articles, headings(h1,h2) hierarchy</li>
-            <li>Tailwind responsiveness (https://tailwindcss.com/docs/responsive-design)</li>
-            <li>Vue <code>v-for</code> loops</li>
-            <li>Vue Components</li>
-        </ul>
-    </div>
+    <section class="bg-1 min-h-screen">
+        <div class="container"></div>
+    </section>
 </template>
 <script>
 export default {
