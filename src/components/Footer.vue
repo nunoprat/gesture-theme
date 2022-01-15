@@ -7,7 +7,7 @@
             <div class="text-center">
                 <ul>
                     <li>Home</li>
-                    <li>Services</li>
+
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
