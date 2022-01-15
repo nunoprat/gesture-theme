@@ -4,19 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: "Khula", sans-serif;
-}
+@import "./backgrounds.css";
+@import "./text.css";
+
 .page-wrapper {
     min-height: 100vh;
 }
 
-.title {
-    @apply text-3xl font-semibold text-blue-500;
-}
-
-.bg-1 {
-    background-image: url(../pic1.jpg);
-    background-position: center;
-    background-size: cover;
+.min-h-half-screen {
+    min-height: 80vh;
 }

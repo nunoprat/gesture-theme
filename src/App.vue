@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <div class="page-wrapper">
+    <div class="page-wrapper bg-gray-100">
         <router-view />
     </div>
     <Footer />

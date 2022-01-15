@@ -1,0 +1,25 @@
+.heading-logo {
+    @apply text-2xl font-bold text-black;
+    /* background: -webkit-linear-gradient(
+        167deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.heading-1 {
+    @apply text-3xl font-semibold text-blue-500;
+}
+
+.text-gradient-1 {
+    background: -webkit-linear-gradient(
+        -94deg,
+        rgba(000, 000, 000, 0.4) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

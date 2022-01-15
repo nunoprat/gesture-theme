@@ -1,7 +1,7 @@
 <template>
-    <header class="absolute w-full">
+    <header class="absolute w-full z-10">
         <div class="container py-7 px-3 flex flex-row justify-between items-center">
-            <h3 class="logo text-3xl font-thin text-white tracking-tighter">Gesture Theme</h3>
+            <h3 class="logo heading-logo">Gesture Theme</h3>
             <nav>
                 <ul class="flex flex-row text-white">
                     <li v-for="(item, i) in menu" :key="i">
