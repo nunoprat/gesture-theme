@@ -16,6 +16,11 @@ module.exports = {
             transparent: "transparent",
             current: "currentColor",
 
+            primary: '#D417D4',
+            secondary: '#290329',
+            
+            background: '#150215',
+
             black: colors.black,
             white: colors.white,
             gray: colors.coolGray,
@@ -178,6 +183,13 @@ module.exports = {
         },
         container: {
             center: true,
+            padding: {
+                DEFAULT: '1rem',
+                sm: '2rem',
+                lg: '4rem',
+                xl: '5rem',
+                '2xl': '6rem',
+              },
         },
         content: {
             none: "none",
@@ -242,7 +254,7 @@ module.exports = {
         },
         fontFamily: {
             sans: [
-                "Khula",
+                "Readex Pro",
                 "system-ui",
                 "-apple-system",
                 "BlinkMacSystemFont",

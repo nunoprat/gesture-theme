@@ -1,6 +1,6 @@
 <template>
     <header class="absolute w-full z-10">
-        <div class="container py-7 px-3 flex flex-row justify-between items-center">
+        <div class="container py-7 flex flex-row justify-between items-center">
             <h3 class="logo heading-logo">Gesture Theme</h3>
             <nav>
                 <ul class="flex flex-row text-white">

@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Noto+Serif:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @import "./backgrounds.css";
 @import "./text.css";
+
+html,
+body {
+    @apply text-white text-opacity-70;
+}
 
 .page-wrapper {
     min-height: 100vh;
