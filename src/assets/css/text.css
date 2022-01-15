@@ -21,7 +21,7 @@
  * Headings
  **/
 .heading-1 {
-  @apply text-5xl font-bold text-white;
+  @apply text-5xl font-bold text-white leading-snug pt-3;
 }
 
 /**
