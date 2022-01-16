@@ -15,7 +15,7 @@ vec3 paintCircle (vec2 uv, vec2 center, float rad, float width) {
     float len = length(diff);
 
      len -= variation(diff, vec2(1.0, 1.2), 2.0, 0.5);
-     len += variation(diff, vec2(3.0, 2.2), 3.0, 0.5);
+     len += variation(diff, vec2(3.0, 2.2), 4.0, 0.5);
      
     
     float circle = smoothstep(rad+width, rad, len) ;
@@ -27,25 +27,27 @@ void main( void )
 {
     vec2 uv = gl_FragCoord.xy / iResolution.xy;
 
-    uv.x *= 1.1;
-    uv.x -= 0.25;
     
+    uv.x += 0.0;
+    uv.y += 0.0;
     vec3 color;
-    float radius = 0.10;
+    float radius = 0.05;
     vec2 center = vec2(0.5);
     
      
-    color = paintCircle(uv, center, radius, 0.3);
+    color = paintCircle(uv, center, radius, 0.4);
     //paint color circle
     
     //color with gradient
     vec2 v = uv;
 
 
-    color *= vec3(0.6, 0.6, 0.45);
+    color *= vec3(0.7, 0.6, 0.7);
+    color *= vec3(0.7, 0.6, 0.7);
     //paint white circle
-    color -= paintCircle(uv, center, radius, 0.140);
         
+    color -= paintCircle(uv, center, radius, 0.200);
+    color -= paintCircle(uv, center, radius, 0.200);
 
 	gl_FragColor = vec4(color, 1.0);
 }
