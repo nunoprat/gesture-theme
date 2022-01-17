@@ -13,7 +13,7 @@
                     class="flex flex-col justify-center items-center lg:flex-row absolute lg:relative top-0 left-0 backdrop-filter backdrop-blur-md lg:backdrop-blur-none bg-opacity-10 w-screen lg:w-auto h-screen lg:h-auto text-white"
                 >
                     <li v-for="(item, i) in menu" :key="i" class="py-6 lg:py-0">
-                        <router-link :to="item.to" class="px-3 lg:text-sm font-light text-4xl">{{
+                        <router-link :to="item.to" class="px-3 lg:text-base font-light text-4xl">{{
                             item.name
                         }}</router-link>
                     </li>

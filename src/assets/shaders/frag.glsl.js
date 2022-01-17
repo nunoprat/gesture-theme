@@ -1,6 +1,8 @@
-uniform float Power;
-#define rand1(p) fract(sin(p* 78.233)* 43758.5453) 
+const glsl = (x) => x;
 
+export default glsl`
+uniform vec3 iResolution;    
+uniform float iGlobalTime;    
 
 float variation(vec2 v1, vec2 v2, float strength, float speed) {
 	return sin(
@@ -49,5 +51,5 @@ void main( void )
     color -= paintCircle(uv, center, radius, 0.200);
     color -= paintCircle(uv, center, radius, 0.200);
 
-	gl_FragColor = vec4(color, 1.0);
-}
+	gl_FragColor = vec4(color, 0.0);
+}`;

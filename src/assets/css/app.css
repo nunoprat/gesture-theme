@@ -5,6 +5,7 @@
 
 @import "./backgrounds.css";
 @import "./text.css";
+@import "./buttons.css";
 
 html,
 body {
@@ -13,6 +14,8 @@ body {
 
 .page-wrapper {
     min-height: 100vh;
+    position: relative;
+    z-index: -1;
 }
 
 .min-h-half-screen {

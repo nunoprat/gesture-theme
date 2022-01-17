@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <div class="page-wrapper bg-background pt-28">
+    <div class="page-wrapper bg-background">
         <router-view />
     </div>
     <Footer />
