@@ -33,8 +33,8 @@ void main( void )
     uv.x += 0.0;
     uv.y += 0.0;
     vec3 color;
-    float radius = 0.05;
-    vec2 center = vec2(0.5);
+    float radius = 0.01;
+    vec2 center = vec2(0.6, 0.5);
     
      
     color = paintCircle(uv, center, radius, 0.4);
@@ -51,5 +51,5 @@ void main( void )
     color -= paintCircle(uv, center, radius, 0.200);
     color -= paintCircle(uv, center, radius, 0.200);
 
-	gl_FragColor = vec4(color, 0.0);
+	gl_FragColor = vec4(0, 1, 0, 0.0);
 }`;
