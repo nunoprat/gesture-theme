@@ -89,11 +89,11 @@ void main() {
   vPosition = position;
   vUv = uv;
   vNormal = normal;
-  float noiseScale = 1.0 + abs(sin(uTime / 20.0));
+  float noiseScale = 2.0 + sin(uTime / 20.0);
 
   float fnoise = cnoise(vPosition * noiseScale + uTime / 2.0);
   vColor = hsv2rgb(vec3(fnoise * 0.2, 0.8, 0.8));
-  vec3 newposition = vPosition * (fnoise + 0.5);
+  vec3 newposition = vPosition * (fnoise + 5.);
   
   gl_Position = projectionMatrix * modelViewMatrix * vec4( newposition, 1.0 );
 }

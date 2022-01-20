@@ -1,55 +1,22 @@
 const glsl = (x) => x;
 
 export default glsl`
-uniform vec3 iResolution;    
-uniform float iGlobalTime;    
+uniform float uTime;
+    varying vec3 vPosition;
+    varying vec3 vNormal;
+    varying vec2 vUv;
+    varying vec3 vColor;
 
-float variation(vec2 v1, vec2 v2, float strength, float speed) {
-	return sin(
-        dot(normalize(v1), normalize(v2)) * strength + iGlobalTime * speed
-    ) /40.0;
-}
+    void main() {
+        vec3 light = vec3(0.0, 0.0, 0.0);
+        vec3 skyColor = vec3(0.0, 0.0, 0.0);
+        vec3 colorBottom = vec3(0.0,0.0,0.0);
 
+        float intensity = pow(1.0 - dot(vNormal, vec3(0,0,1.0)), 1.0);
 
-vec3 paintCircle (vec2 uv, vec2 center, float rad, float width) {
-    
-    vec2 diff = center-uv;
-    float len = length(diff);
+        vec3 lightDirection = normalize(vec3(1.,-1.0,-0.2));
+        light = mix(skyColor, colorBottom, dot(lightDirection, vNormal)) ;
 
-     len -= variation(diff, vec2(1.0, 1.2), 2.0, 0.5);
-     len += variation(diff, vec2(3.0, 2.2), 4.0, 0.5);
-     
-    
-    float circle = smoothstep(rad+width, rad, len) ;
-    return vec3(circle);
-}
-
-
-void main( void )
-{
-    vec2 uv = gl_FragCoord.xy / iResolution.xy;
-
-    
-    uv.x += 0.0;
-    uv.y += 0.0;
-    vec3 color;
-    float radius = 0.01;
-    vec2 center = vec2(0.6, 0.5);
-    
-     
-    color = paintCircle(uv, center, radius, 0.4);
-    //paint color circle
-    
-    //color with gradient
-    vec2 v = uv;
-
-
-    color *= vec3(0.7, 0.6, 0.7);
-    color *= vec3(0.7, 0.6, 0.7);
-    //paint white circle
-        
-    color -= paintCircle(uv, center, radius, 0.200);
-    color -= paintCircle(uv, center, radius, 0.200);
-
-	gl_FragColor = vec4(0, 1, 0, 0.0);
-}`;
+        gl_FragColor = vec4(lightDirection, 1.0);
+    }
+`;
