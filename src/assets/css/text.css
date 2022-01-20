@@ -21,7 +21,7 @@
  * Headings
  **/
 .heading-1 {
-  @apply text-5xl font-bold text-white leading-snug pt-3;
+  @apply text-2xl sm:text-3xl lg:text-5xl font-bold text-white leading-snug pt-3;
 }
 
 /**
@@ -50,4 +50,5 @@
  **/
 
 .paragraph-base {
+  @apply font-thin leading-loose md:text-xl;
 }

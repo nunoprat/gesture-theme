@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div
-      class="container flex flex-col lg:flex-row items-center justify-between"
+      class="container flex flex-col py-20 lg:flex-row items-center justify-between"
     >
       <div class="w-full lg:w-5/12">
         <h6 class="up-heading">About Us</h6>
@@ -13,9 +13,9 @@
         ></div>
       </div>
       <p class="ml-6 w-full lg:w-6/12 font-thin leading-loose text-xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-        possimus vero tempore eius, temporibus id natus similique quam adipisci
-        earum esse exercitationem aperiam.
+        Professionally provide access to bleeding-edge models whereas
+        cross-platform potentialities. Energistically whiteboard progressive
+        action items with extensive technology.
       </p>
     </div>
   </section>
