@@ -1,0 +1,7 @@
+.btn {
+    @apply text-base py-4 px-12 rounded-full;
+    &.btn-primary {
+        @apply text-white;
+        background: linear-gradient(111.29deg, #290329 25.92%, #520952 83.07%);
+    }
+}
