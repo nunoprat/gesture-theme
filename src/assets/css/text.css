@@ -22,14 +22,14 @@
  * Headings
  **/
 .heading-1 {
-    @apply text-2xl sm:text-3xl lg:text-5xl font-bold text-white leading-snug pt-3;
+    @apply text-2xl sm:text-3xl lg:text-5xl font-bold text-white lg:leading-tight pt-3;
 }
 
 /**
  * UpHeading
  **/
 .up-heading {
-    @apply text-primary uppercase;
+    @apply text-primary uppercase text-base font-thin;
     text-shadow: 0px 0px 15px rgba(255, 0, 199, 0.95);
 }
 
@@ -51,5 +51,8 @@
  **/
 
 .paragraph-base {
-    @apply font-thin leading-loose md:text-xl;
+    @apply font-thin text-xl leading-9 tracking-wider;
+}
+.paragraph-sm {
+    @apply font-thin text-sm leading-5 tracking-wider;
 }

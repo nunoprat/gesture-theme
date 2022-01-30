@@ -1,7 +1,11 @@
 .btn {
-    @apply text-base py-4 px-12 rounded-full;
-    &.btn-primary {
+    @apply text-base py-4 px-14 rounded-full relative inline-block transition-transform transform-gpu duration-1000;
+    &.primary {
         @apply text-white;
         background: linear-gradient(111.29deg, #290329 25.92%, #520952 83.07%);
+    }
+
+    &:hover {
+        @apply scale-105;
     }
 }
