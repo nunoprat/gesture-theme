@@ -16,17 +16,17 @@
                     We help brands be their most inspiring selves. Own their quirks - their edge -
                     their culture. Help them be confidently attractive. At home, and abroad.
                 </p>
-                <Button />
+                <AppButton class="mt-10">Know More</AppButton>
             </div>
         </div>
     </section>
 </template>
 <script>
-import Button from "../Button.vue";
+import AppButton from "../ui/AppButton.vue";
 
 export default {
     components: {
-        Button,
+        AppButton,
     },
 };
 </script>

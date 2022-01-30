@@ -7,16 +7,16 @@
                     <h1 class="display-1">Webgl</h1>
                     <h1 class="display-1">Backgrounds</h1>
                 </div>
-                <Button class="mt-10" />
+                <AppButton class="mt-10">Buy Theme</AppButton>
             </div>
         </div>
     </section>
 </template>
 <script>
-import Button from "@/components/Button";
+import AppButton from "@/components/ui/AppButton";
 export default {
     components: {
-        Button,
+        AppButton,
     },
 };
 </script>

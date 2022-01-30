@@ -1,5 +1,5 @@
 <template>
-    <a class="btn" :class="variant" :href="href" ref="button">Buy Theme</a>
+    <a class="btn" :class="variant" :href="href" ref="button"><slot /></a>
 </template>
 <script>
 import gsap from "gsap";
